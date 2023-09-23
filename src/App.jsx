@@ -1,8 +1,9 @@
+import Home from "./pages/Home";
+import { getInitialData,showFormattedDate } from "./utils";
 function App() {
-  return (
-      <div className='flex justify-center items-center w-[100vw] h-[100vh]'>
-          <h1 className='text-center font-sans text-2xl font-bold'>Note App | Dicoding</h1>
-      </div>
-  );
+    return (
+    <Home data={getInitialData()} formatDate={showFormattedDate}/>
+    
+    );
 }
-export default App
+export default App;
