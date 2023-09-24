@@ -1,8 +1,4 @@
-import React from "react";
-
 function Input({ type = "text", value, id = "", name = "", onChange = () => {}, size = "250px" }) {
-    console.log('inivalue',value)
-
     return (
         <>
             <input
