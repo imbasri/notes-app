@@ -2,15 +2,11 @@ function Button({
     title,
     type,
     onClick,
-    color,
+    style,
 }) {
     return (
-        <button
-            type={type ?? 'submit'}
-            className={`${color ?? "bg-blue-400"} mx-4 px-5 py-2 rounded text-white cursor-pointer`}
-            onClick={onClick}
-        >
-            {title ?? 'Submit'}
+        <button type={type ?? "submit"} className={style} onClick={onClick}>
+            {title ?? "Submit"}
         </button>
     );
 }

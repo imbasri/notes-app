@@ -1,4 +1,4 @@
-function Input({ type = "text", value, id = "", name = "", onChange = () => {}, size = "250px" }) {
+function Input({ type="text", value, id, name="", onChange = () => {},style='px-3 py-2 rounded' ,placeholder='' }) {
     return (
         <>
             <input
@@ -7,8 +7,8 @@ function Input({ type = "text", value, id = "", name = "", onChange = () => {}, 
                 id={id}
                 value={value}
                 onChange={onChange}
-                className={`mx-4 px-3 py-2 rounded`}
-                style={{ width: size }}
+                className={style}
+                placeholder={placeholder}
             />
         </>
     );
