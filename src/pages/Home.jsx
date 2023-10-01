@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 // Data
 import Paper from "../components/Molecules/Paper";
 import Loading from "../components/Atoms/Loading";
+import Modal from "../components/Molecules/Modal";
 function Home({ data, formatDate }) {
     const showFormattedDate = formatDate;
     const [datas, setDatas] = useState(data);
@@ -153,6 +154,7 @@ function Home({ data, formatDate }) {
         Searching(search);
     };
 
+   
     return (
         <Layout dataSearching={Searching}>
             <h1 className='text-center font-mono mt-5 text-2xl'>Catatan Aktif</h1>
